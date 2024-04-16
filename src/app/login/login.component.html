@@ -1,7 +1,9 @@
 <p>login works!</p>
-<form >
+<form  >
     User Name : <input type="text" #username> <br/>
     Password : <input type="password" #password> <br/>
-  <input type="submit" value="login" (click)="CheckUser()" > <input type="reset" value="clear">
+  <input type="button" value="login" (click)="CheckUser(username,password)"> <input type="reset" value="clear">
 
 </form>
+<hr/>
+<h1>{{msg}}</h1>
